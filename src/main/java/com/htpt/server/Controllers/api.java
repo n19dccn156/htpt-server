@@ -73,4 +73,9 @@ public class api {
         return userService.insert(user);
     }
 
+    @GetMapping(value = "/ping")
+    public Boolean Ping() {
+        return true;
+    }
+
 }
